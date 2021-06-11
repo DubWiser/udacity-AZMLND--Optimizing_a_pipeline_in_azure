@@ -43,11 +43,11 @@ def clean_data(data):
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
     return x_df, y_df
-    
+
 x, y = clean_data(ds) 
 
 #Split the data into train and test
-x_train,x_test, y_train, y_test = train_test_split(x,y,size = 0.3, random_state = 35)
+x_train,x_test, y_train, y_test = train_test_split(x,y,test_size = 0.3, random_state = 35)
 
 run = Run.get_context()
 

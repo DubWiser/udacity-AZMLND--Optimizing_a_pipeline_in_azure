@@ -2,16 +2,35 @@
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
-In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
-This model is then compared to an Azure AutoML run.
+In this project, I built and optimized an Azure ML pipeline using the Python SDK and a custom Scikit-learn Logistic Regression model. I optimised the hyperparameters of this model using HyperDrive. Then, I used Azure AutoML to find an optimal model using the same dataset, so that I can compare the results of the two methods.
+
+The following image illustrates the main steps I followed during the project.
+
+![image](https://user-images.githubusercontent.com/45318647/124382752-abeda880-dce6-11eb-93e5-deb0815c23ac.png)
+
+The whole exercise can be broken down into the following steps: 
+
+Step 1: Set up the train script, create a Tabular Dataset from this set & evaluate it with the custom-code Scikit-learn logistic regression model.
+
+Step 2: Creation of a Jupyter Notebook and use of HyperDrive to find the best hyperparameters for the logistic regression model.
+
+Step 3: Next, load the same dataset in the Notebook with TabularDatasetFactory and use AutoML to find another optimized model.
+
+Step 4: Finally, compare the results of the two methods and write a research report i.e. this Readme file.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-
+This dataset contains data about individuals applying for bank loans. The objective is to develop a model based on the information provided about each individual, to predict whether they will subscribe to a service or not.
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The best performing model was found to be a voting ensemble with 91.5% accuracy.
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+Parameter sampler
+
+I specified the parameter sampler as mentioned below:
+![image](https://user-images.githubusercontent.com/45318647/124383728-a8105500-dceb-11eb-9312-b60f341a8b65.png)
+
 
 **What are the benefits of the parameter sampler you chose?**
 

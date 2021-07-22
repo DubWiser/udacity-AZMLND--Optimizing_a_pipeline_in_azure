@@ -73,3 +73,12 @@ The difference between the two models is trivial. The Hyperdrive model for the s
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
 Performing feature engineering on this data to construct more hypothesis based features would have helped in improving the predictive power of the model. Secondly, since the data is highly imbalanced, techniques for handling imbalanced data can be applied to get better predictions minimizing the false positives and false negatives. Accuracy is a bad metric to assess the classification model when built on top of imbalanced data. Metrics like weighted AUC, precision and recall give a much clearer picture of the model evaluation in such cases. Also increasing the cross validations from 5 to 10, accompanied by increase in experiment_timeout_minutes can also help in better generalisation.
+
+## Proof of cluster clean up
+
+If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section. Image of cluster marked for deletion.
+
+![image](https://user-images.githubusercontent.com/45318647/126614152-8acc12ca-69c4-4fd8-9eec-0627b63dcdf4.png)
+![image](https://user-images.githubusercontent.com/45318647/126614171-8c9554fc-1c21-43e4-9859-8e8924ea22a5.png)
+
+

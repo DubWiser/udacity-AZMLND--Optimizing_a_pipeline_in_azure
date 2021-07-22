@@ -78,6 +78,8 @@ Performing feature engineering on this data to construct more hypothesis based f
 
 If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section. Image of cluster marked for deletion.
 
+![image](https://user-images.githubusercontent.com/45318647/126615008-2dc1f01a-f29f-4228-aaf6-8695ce947591.png)
+
 ![image](https://user-images.githubusercontent.com/45318647/126614152-8acc12ca-69c4-4fd8-9eec-0627b63dcdf4.png)
 ![image](https://user-images.githubusercontent.com/45318647/126614171-8c9554fc-1c21-43e4-9859-8e8924ea22a5.png)
 
